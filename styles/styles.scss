@@ -9,7 +9,7 @@
 
 // Hero Section CSS
 .hero {
-  background-color: $light;
+  background-color: $light;   // variables in use
 
   &__container {
     display: grid;
@@ -119,4 +119,35 @@
   }
 }
 
+// interpolation
+p:after {
+   content:  #{1 + 2};
+}
 
+// function
+$first-width: 5px;
+$second-width: 5px;
+
+@function adjust_width($n) {
+   @return $n * $first-width + ($n - 1) * $second-width;
+}
+
+#set_width { padding-left: adjust_width(10); }
+
+// nesting
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display:list-item;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: rgb(89, 23, 44);
+  }
+}            

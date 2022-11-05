@@ -5,8 +5,11 @@
         "styles.scss",
         "_navbar.scss",
         "_colors.scss",
-        "_media-queries.scss"
+        "_media-queries.scss",
+        "login.scss",
+        "placeholder.scss"
     ],
     "names": [],
     "file": "styles.css"
+    
 }
