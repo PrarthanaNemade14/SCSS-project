@@ -1,3 +1,6 @@
+//<!--NUID: 002790368-->
+
+
 @import 'navbar';
 
 * {
@@ -131,7 +134,6 @@ $second-width: 5px;
 @function adjust_width($n) {
    @return $n * $first-width + ($n - 1) * $second-width;
 }
-
 #set_width { padding-left: adjust_width(10); }
 
 // nesting
